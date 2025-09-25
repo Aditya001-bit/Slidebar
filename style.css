@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main_box{
+  background: url("photo.jpg");
+  height: 100vh; 
+  background-size: cover;
+}
+ .btn_one  {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  position: absolute;
+  left: 10px;
+  line-height: 50px;
+  cursor: pointer;
+  transition: all linear 0.5s;
+}
+.sidebar_menu{
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(160, 153, 153 , 0.2);
+  box-shadow:  0px 0px 5px 5px rgba(255, 255,255 ,0.5);
+  transition: linear 0.2s  ;
+}
+.sidebar_menu .btn_two {
+  color:gray;
+  font-size: 20px;
+  position: absolute;
+  left: 270px;
+  top: 0.5px; 
+  line-height: 50px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all linear 1s;
+}
+.sidebar_menu .logo{
+  position: absolute;
+  width: 100%;
+  line-height:50px;
+  /* box-shadow: 5px rgb(211, 73, 73); */
+}
+.sidebar_menu .logo a {
+  text-decoration: none;
+  position: absolute;
+  left: 50px;
+  font-size: 25px;
+  color: rgb(220, 153, 30);
+  font-weight: 800;
+}
+
+ .sidebar_menu .menu{
+  color: aliceblue;
+  position: absolute;
+  width: 100%; 
+   top: 80px; 
+}
+.sidebar_menu .menu li{
+  padding: 10px 20px;
+  margin: 5px;
+}
+.sidebar_menu .menu i,a{
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+.sidebar_menu .menu i{
+  padding: 10px 10px;
+}
+.social_media{
+  
+  position: absolute;
+  left: 25%;
+  bottom: 50px;
+}
+#check{
+  display: none;
+}
+.sidebar_menu .social_media i{
+  color: whitesmoke;
+  padding: 5px;
+  opacity: 0.5;  
+}
+
+.sidebar_menu .menu li:hover{
+  box-shadow: 0 0 2px  gray ;
+}
+.btn_one i:hover{
+  font-size:35px ;
+}
+.btn_two i:hover{
+  font-size: 25px;
+
+}
+.sidebar_menu .social_media i:hover{
+  opacity: 1;
+  transform: scale(1.2);
+}
+#check:checked ~ .sidebar_menu{
+  left: 0;
+}
+#check:checked ~.btn_one{
+  display: none;
+}
